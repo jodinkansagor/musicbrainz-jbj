@@ -4,20 +4,19 @@ import ArtistInput from '../components/artist/Form';
 import styles from './ArtistContainer.css';
 import useArtists from '../hooks/artistHook';
 import Paging from '../components/paging/Paging';
+// import If from '../components/conditionals/If';
 
-const ArtistContainer = () => {
+const Artist = () => {
   const { artistName, handleChange, handleSubmit, artistArray, currentPage, handlePreviousClick, handleNextClick } = useArtists();
-
-  // const nameNoSpace = artistName.replace(/\s/g, '-');
 
   return (
     <section className={styles.Container}>
-      <Paging handlePreviousClick={handlePreviousClick} handleNextClick={handleNextClick} currentPage={currentPage} />
       <ArtistInput artistName={artistName} onChange={handleChange} onSubmit={handleSubmit} />
+      <Paging handlePreviousClick={handlePreviousClick} handleNextClick={handleNextClick} currentPage={currentPage} />
       <ArtistList artistArray={artistArray} artistName={artistName} />
       <Paging handlePreviousClick={handlePreviousClick} handleNextClick={handleNextClick} currentPage={currentPage} />
     </section>
   );
 };
 
-export default ArtistContainer;
+export default Artist;
