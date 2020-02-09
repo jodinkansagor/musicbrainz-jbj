@@ -1,0 +1,31 @@
+header {
+  font-family: 'Roboto Mono', monospace;
+
+  a {
+    color: darkgreen;
+    text-decoration: none;
+
+    &:hover {
+      color: purple;
+    }
+  }
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+
+  img {
+    width: 100px;
+    border-radius: 100%;
+    margin-right: 10px;
+  }
+
+  border-bottom: 1px solid #333333;
+  margin-bottom: 5px;
+
+ 
+}

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecordingsList component renders RecordingsList 1`] = `
+<Fragment>
+  <section>
+    <h1>
+      Tracks:
+    </h1>
+    <ul />
+  </section>
+</Fragment>
+`;

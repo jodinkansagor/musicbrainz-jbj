@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlbumItem component renders AlbumItem 1`] = `
+<Fragment>
+  <Link
+    to="/recordings/1/name"
+  >
+    <img
+      onError={[Function]}
+      src="http://coverartarchive.org/release/1/front"
+    />
+    <p>
+      Title
+    </p>
+  </Link>
+</Fragment>
+`;

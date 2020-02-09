@@ -1,0 +1,7 @@
+html {
+  font-family: 'Roboto Mono', monospace;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
