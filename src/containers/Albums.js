@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import getAlbums from '../components/services/getAlbums';
 import Paging from '../components/paging/Paging';
 import styles from './Album.css';
+import If from '../components/conditionals/If';
 
 const Albums = ({ match }) => {
   const [albumArray, setAlbumArray] = useState([]);
@@ -45,8 +46,13 @@ const Albums = ({ match }) => {
   return (
     <section className={styles.AlbumContainer}>
       <Paging handlePreviousClick={handlePreviousClick} handleNextClick={handleNextClick} currentPage={currentPage} />
-      <AlbumList albumArray={albumArray} artistId={match.params.artistId} artistName={match.params.artistName} handleNextClick={handleNextClick} handlePreviousClick={handlePreviousClick} />
-      <Paging handlePreviousClick={handlePreviousClick} handleNextClick={handleNextClick} currentPage={currentPage} />
+      <AlbumList albumArray={albumArray} artistId={match.params.artistId} artistName={match.params.artistName} />
+      <If condition={albumArray.length === 0}>
+        <h3>There are no albums listed for this artist.</h3>
+      </If>
+      <If condition={albumArray.length > 0}>
+        <Paging handlePreviousClick={handlePreviousClick} handleNextClick={handleNextClick} currentPage={currentPage} />
+      </If>
     </section>
   );
 };

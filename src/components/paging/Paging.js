@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Paging.css';
 
 const Paging = ({ currentPage, handleNextClick, handlePreviousClick }) => (
-  <>
-    <button onClick={handlePreviousClick}>&lt;</button>
+  <section className={styles.Button}>
+    <button onClick={handlePreviousClick}>Previous</button>
     <span>Page {currentPage}</span>
-    <button onClick={handleNextClick}>&gt;</button>
-  </>
+    <button onClick={handleNextClick}>Next</button>
+  </section>
 );
 
 Paging.propTypes = {
