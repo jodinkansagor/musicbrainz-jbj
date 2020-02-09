@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { getLyrics } from '../services/getLyrics';
 import PropTypes from 'prop-types';
+import styles from './Lyrics.css';
 
 function Lyrics({ match }) {
   const [lyrics, setLyrics] = useState('');
@@ -12,8 +13,9 @@ function Lyrics({ match }) {
   });
 
   return (
-    <section>
-      <p>{lyrics}</p>  
+    <section className={styles.LyricsContainer}>
+      <h1>Lyrics: </h1>
+      <p>{lyrics || 'No lyrics were found for this track'}</p>  
     </section>
   );
 }

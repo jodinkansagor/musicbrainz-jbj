@@ -1,6 +1,5 @@
 import React from 'react';
 import ArtistItem from './ArtistItem.js';
-import styles from './ArtistItem.css';
 import PropTypes from 'prop-types';
 
 const ArtistList = ({ artistArray }) => {
@@ -10,7 +9,7 @@ const ArtistList = ({ artistArray }) => {
   ));
   
   return (
-    <section className={styles.artistList}>
+    <section>
       <ul>
         {artistItemElements}
       </ul>

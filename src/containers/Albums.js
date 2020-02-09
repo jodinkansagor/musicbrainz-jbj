@@ -3,6 +3,7 @@ import AlbumList from '../components/album/AlbumList';
 import PropTypes from 'prop-types';
 import getAlbums from '../components/services/getAlbums';
 import Paging from '../components/paging/Paging';
+import styles from './Album.css';
 
 const Albums = ({ match }) => {
   const [albumArray, setAlbumArray] = useState([]);
@@ -42,11 +43,11 @@ const Albums = ({ match }) => {
   }, [offset]);
 
   return (
-    <>
+    <section className={styles.AlbumContainer}>
       <Paging handlePreviousClick={handlePreviousClick} handleNextClick={handleNextClick} currentPage={currentPage} />
       <AlbumList albumArray={albumArray} artistId={match.params.artistId} artistName={match.params.artistName} handleNextClick={handleNextClick} handlePreviousClick={handlePreviousClick} />
       <Paging handlePreviousClick={handlePreviousClick} handleNextClick={handleNextClick} currentPage={currentPage} />
-    </>
+    </section>
   );
 };
 

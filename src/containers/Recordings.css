@@ -1,0 +1,20 @@
+.RecordingsContainer {
+  margin-top: 130px;
+  font-family: 'Roboto Mono', monospace;
+  ul {
+    list-style: none;
+  }
+
+  p{
+    color: darkgreen;
+
+    &:hover {
+      color: purple;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+}

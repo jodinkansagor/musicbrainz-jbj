@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import RecordingsList from '../components/recordings/RecordingsList';
 import getRecordings from '../components/services/getRecordings';
+import styles from './Recordings.css';
 
 const Recordings = ({ match }) => {
   const [recordingsArray, setRecordingsArray] = useState([]);
@@ -12,9 +13,9 @@ const Recordings = ({ match }) => {
   }, []);
 
   return (
-    <>
+    <section className={styles.RecordingsContainer}>
       <RecordingsList recordingsArray={recordingsArray} artistName={match.params.artistName} />
-    </>);
+    </section>);
 };
 
 Recordings.propTypes = {

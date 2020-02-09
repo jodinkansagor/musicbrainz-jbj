@@ -21,7 +21,7 @@ const useArtists = () => {
   }, [offset]);
 
   const handleChange = ({ target }) => {
-    setArtist(target.value.replace(/\s/g, '-'));
+    setArtist(target.value);
   };
 
   const handleSubmit = (event) => {

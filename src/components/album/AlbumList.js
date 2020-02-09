@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AlbumItem from './AlbumItem';
-import styles from './AlbumList.css';
+import styles from '../../containers/Album.css';
 
 const AlbumList = ({ albumArray, artistName }) => {
 
@@ -12,9 +12,12 @@ const AlbumList = ({ albumArray, artistName }) => {
   ));
 
   return (
-    <ul className={styles.Albums}>
-      {albumElements}
-    </ul>
+    <section className={styles.AlbumContainer}>
+      <h1>Albums: </h1>
+      <ul className={styles.Albums}>
+        {albumElements}
+      </ul>
+    </section>
   );
 };
 

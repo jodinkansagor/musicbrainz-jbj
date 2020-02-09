@@ -1,0 +1,8 @@
+.LyricsContainer {
+  margin-top: 105px;
+
+  p {
+    font-family: 'Roboto Mono', monospace;
+    margin: 25px;
+  }
+}

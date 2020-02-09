@@ -13,7 +13,7 @@ const RecordingsList = ({ recordingsArray, artistName }) => {
   return (
     <>
       <section>
-        <h1>Recordings</h1>
+        <h1>Tracks:</h1>
         <ul>
           {recordings}
         </ul>

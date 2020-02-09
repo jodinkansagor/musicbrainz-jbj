@@ -1,0 +1,45 @@
+.Container {
+  margin-top: 110px;
+
+  form {
+    position: fixed;
+    top: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+      input {
+        margin-right: 3px;
+        font-family: 'Roboto Mono', monospace;
+        border-radius: 5px;
+        border: 1px solid darkgreen;
+        width: 200px;
+      }
+
+      button {
+        font-family: 'Roboto Mono', monospace;
+        border: 1px solid darkgreen;
+        border-radius: 5px;
+        margin-right: 20px;
+      }
+  }
+
+  ul {
+    margin-top: 150px;
+    list-style: none;
+  }
+
+  h1 {
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1:hover {
+    color: darkgreen
+  }
+
+}
