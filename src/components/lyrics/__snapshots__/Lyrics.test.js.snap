@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Lyrics component renders Lyrics 1`] = `
-<section>
-  <p />
+<section
+  className="LyricsContainer"
+>
+  <h1>
+    Lyrics: 
+  </h1>
+  <p>
+    No lyrics were found for this track
+  </p>
 </section>
 `;

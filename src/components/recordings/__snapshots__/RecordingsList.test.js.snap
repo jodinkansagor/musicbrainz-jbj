@@ -4,7 +4,7 @@ exports[`RecordingsList component renders RecordingsList 1`] = `
 <Fragment>
   <section>
     <h1>
-      Recordings
+      Tracks:
     </h1>
     <ul />
   </section>

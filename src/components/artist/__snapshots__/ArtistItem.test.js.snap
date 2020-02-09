@@ -4,15 +4,10 @@ exports[`ArtistItem component renders ArtistItem 1`] = `
 <Link
   to="/albums/1/name"
 >
-  <li
-    className="artistItem"
-  >
+  <li>
     <h1>
       name
     </h1>
-    <p>
-      1
-    </p>
   </li>
 </Link>
 `;
